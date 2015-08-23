@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
   background-color: rgba(0, 0, 0, 0.02);
   /* set back ground image for the page */
-  /* background-image: url('../img/hero.jpg'); */
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   background-attachment: fixed;
   content: '';
@@ -16,7 +16,7 @@ body {
 
 /* Top Nav styles */
 .namelogo h1 {
-  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial !important;
+  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
   font-size: 1.5em;
   font-weight: 600;
   text-align: center; }
@@ -50,7 +50,11 @@ h1 a {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white; }
+  background-color: white;
+  /* hack to make sure footer shows up towards the bottom for pages with not much content. 
+must revisit. there must be a better way
+*/
+  min-height: 80%; }
   .post .headerimage {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -64,7 +68,7 @@ h1 a {
       padding: 20px;
       color: #424242; }
       .post .headerimage .title h3 {
-        font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial !important;
+        font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
         color: white;
         margin: 0px;
         padding: 0px; }

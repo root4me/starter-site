@@ -8,7 +8,7 @@ body {
   background-color: rgba(0, 0, 0, 0.02);
   /* set back ground image for the page */
   
- /* background-image: url('../img/hero.jpg'); */
+  background-image: url('../img/hero.jpg'); 
   background-size: cover;
   background-attachment: fixed;
   content: '';
@@ -20,6 +20,7 @@ body {
 
 @import 'topnav';
 @import 'post';
+@import 'code';
 @import 'material-icons';
 @import 'bottomnav';
 @import 'footer';
