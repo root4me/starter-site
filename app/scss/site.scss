@@ -4,6 +4,7 @@
 @import 'base';
 
 @import 'home';
+@import 'card';
 
 body {
   font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
@@ -15,6 +16,7 @@ body {
   right: 0;
   bottom: 0;
   top: 0;
+  height: 100%;
 }
 
 @import 'topnav';

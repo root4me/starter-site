@@ -79,6 +79,81 @@ h1 {
 h1 {
     font-size: 2.5em; }
 
+/* post styles _post.scss */
+.card {
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 10px; }
+  .card .header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    min-height: 100px;
+    background-color: #00bcd4; }
+    .card .header img {
+      max-height: 200px;
+      min-height: 200px;
+      width: 100%; }
+    .card .header .title {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 20px; }
+      .card .header .title h4 {
+        font-family: "Roboto Condensed", sans-serif, Helvetica;
+        color: white;
+        margin: 0px;
+        padding: 0px; }
+
+.card .authorinfo {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.26);
+  display: flex;
+  flex-direction: colum;
+  font-size: 13px;
+  font-weight: normal;
+  justify-content: flex-start;
+  padding: 20px; }
+  .card .authorinfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px; }
+  .card .authorinfo span {
+    color: rgba(0, 0, 0, 0.26);
+    display: block;
+    padding-left: 5px; }
+
+.card .content {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 20px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden; }
+
+.card:hover {
+  opacity: .8;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+section {
+  flex: 1; }
+
+/* end post styles _post.scss */
 body {
   font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
   background-color: rgba(0, 0, 0, 0.02);
@@ -88,7 +163,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 /* Top Nav styles */
 .namelogo h1 {
@@ -126,26 +202,22 @@ h1 a {
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 10px;
-  /* hack to make sure footer shows up towards the bottom for pages with not much content. 
-must revisit. there must be a better way
-*/
-  min-height: 10%; }
-  .post .headerimage {
+  margin-bottom: 10px; }
+  .post .header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     position: relative;
     min-height: 100px;
     background-color: #00bcd4; }
-    .post .headerimage
-img {
-      height: 100%; }
-    .post .headerimage .title {
+    .post .header img {
+      max-height: 200px;
+      width: 100%; }
+    .post .header .title {
       position: absolute;
       bottom: 0px;
       left: 0px;
       padding: 20px; }
-      .post .headerimage .title h4 {
+      .post .header .title h4 {
         font-family: "Roboto Condensed", sans-serif, Helvetica;
         color: white;
         margin: 0px;
