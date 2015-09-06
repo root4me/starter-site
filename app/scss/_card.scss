@@ -1,14 +1,17 @@
-/* post styles _post.scss */
+/* card styles _card.scss */
 
 .card {
   margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+
   //border-radius: 2px;
   box-shadow: $default-boxshadow;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 10px;
 
   .header {
     border-top-left-radius: 2px;
@@ -96,4 +99,7 @@
 section {
   flex: 1;
 }
-/* end post styles _post.scss */
+
+/* end card styles _card.scss */
+
+

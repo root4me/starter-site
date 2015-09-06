@@ -2,6 +2,29 @@
 @import url("http://fonts.googleapis.com/icon?family=Material+Icons");
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
+  background-color: rgba(0, 0, 0, 0.02);
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%; }
+
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.content-wrapper {
+  flex: 1; }
+
 .hero {
   height: 80vh; }
   .hero .intro-text {
@@ -78,15 +101,17 @@ h1 {
 h1 {
     font-size: 2.5em; }
 
-/* post styles _post.scss */
+/* card styles _card.scss */
 .card {
   margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  margin-bottom: 10px; }
+  background-color: white; }
   .card .header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -154,19 +179,7 @@ h1 {
 section {
   flex: 1; }
 
-/* end post styles _post.scss */
-body {
-  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
-  background-color: rgba(0, 0, 0, 0.02);
-  background-size: cover;
-  background-attachment: fixed;
-  content: '';
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 100%; }
-
+/* end card styles _card.scss */
 /* Top Nav styles */
 .namelogo h1 {
   font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
@@ -197,13 +210,15 @@ h1 a {
 
 /* post styles _post.scss */
 .post {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  margin-bottom: 10px; }
+  background-color: white; }
   .post .header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;

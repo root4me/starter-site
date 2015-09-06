@@ -5,19 +5,6 @@
 @import 'home';
 @import 'card';
 
-body {
-  font-family: "Roboto", "PT Sans", sans-serif, Helvetica, Arial;
-  background-color: rgba(0, 0, 0, 0.02);
-  background-size: cover;
-  background-attachment: fixed;
-  content: '';
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 100%;
-}
-
 @import 'topnav';
 @import 'post';
 @import 'code';

@@ -1,15 +1,17 @@
 /* post styles _post.scss */
 
 .post {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   //border-radius: 2px;
   box-shadow: $default-boxshadow;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 10px;
-  
+
   .header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
