@@ -58,8 +58,7 @@ body {
 
 .img-bg-section60 {
   height: 60vh; }
-  .img-bg-section60
-h1 {
+  .img-bg-section60 h1 {
     color: white;
     text-align: center; }
   .img-bg-section60 .section-header {
@@ -97,8 +96,7 @@ h1 {
   padding-top: 2%;
   text-align: center;
   font-family: 'Roboto', sans-serif, Helvetica, Arial; }
-  .homecontent
-h1 {
+  .homecontent h1 {
     font-size: 2.5em; }
 
 /* card styles _card.scss */
@@ -208,9 +206,7 @@ section {
 
 .top-bar {
   background: white; }
-  .top-bar
-.name
-h1 a {
+  .top-bar .name h1 a {
     width: auto; }
 
 /* post styles _post.scss */
