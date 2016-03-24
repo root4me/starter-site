@@ -9,7 +9,7 @@ $(document).foundation();
         elements.splice(0, elements.length);
         elementsOverlay.splice(0, elements.length);
     };
-    
+
     $.fn.scrollnfade = function(options) {
 
         var settings = $.extend({
